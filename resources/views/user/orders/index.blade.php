@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="card">
-                    <div class="card-header bg-gray-800 text-white">
+                    <div class="card-header bg-blue-500 text-white text-center p-3">
                         <h4>My Orders</h4>
                     </div>
                     <div class="card-body">

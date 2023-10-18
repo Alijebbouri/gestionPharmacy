@@ -8,7 +8,6 @@
         <title>{{ config('app.name', 'Pharmacy') }}</title>
         <link rel="icon" href="{{asset('img/favicon.png')}}">
         <!-- Fonts -->
-        <script src="https://cdn.tailwindcss.com"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css">
 <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
         <link rel="preconnect" href="https://fonts.bunny.net">
@@ -19,17 +18,17 @@
       @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="font-sans antialiased">
-        <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
+        <div class="min-h-screen bg-gray-100 dark:bg-gray-900 ">
             @include('layouts.navigation')
             <!-- Page Heading -->
             @if (isset($header))
                 <header class="bg-white dark:bg-gray-800 shadow">
-                    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+                    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 ">
                         {{ $header }}
                     </div>
                 </header>
             @endif
-            <section>
+            <section >
                 @yield('content')
             </section>
         </div>
